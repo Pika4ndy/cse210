@@ -1,0 +1,6 @@
+A Version Control is a tool used for keeping tracks and history of changes done by different people in a team in order to have every one updated
+and make a clean control of the project. One example of Version Control system or VCS is Git. Even if it was possible to pull and push to teammates
+computer, using a remote repositories (the place where changes are submitted) like Github, online, make management easier. By using a VCS, each collaborators
+can work on different side of the project without being late on changes or modifying anyone else codes. `git pull` and `git push` are 2 examples of mainly used 
+git command. `git pull` retrieves the change made on the repository to keep ours up to date and `git push` transfers the changes we have done locally to the remote repository
+so that everyone can get this new version of the project.
