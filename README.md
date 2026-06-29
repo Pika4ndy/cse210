@@ -9,5 +9,6 @@ This repository contains the code and documentation for the CSE 210 course by BY
 ## Project Overview (draft)
 
 | Week | Project | Description |
+| ----- | ----- | ----- |
 | 1 | Project | Description |
 | 2 | Project | Description |
