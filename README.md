@@ -1,4 +1,13 @@
-# cse210-ww-student-template
-This is the starter code for students in the worldwide content version of CSE 210.
+# CSE210 Project Repo
 
-This repository contains the starter code for many different projects. They are arranged folders by week. There is also an an empty sandbox project that can be used to play around with any concept you would like.
+## CSE 210: Programming with Classes
+
+Student Name: *Andrianarivo Andy*
+
+This repository contains the code and documentation for the CSE 210 course by BYU Idaho. The course focuses on using classes and object in programming with *C#* language.
+
+## Project Overview (draft)
+
+| Week | Project | Description |
+| 1 | Project | Description |
+| 2 | Project | Description |
