@@ -2,7 +2,8 @@
 /* 
 Program Description:
     This program will run a 'guess my number' game while giving clues to the user if the number is higher or lower.
- */
+*/
+
 using System;
 using Microsoft.VisualBasic;
 
@@ -17,7 +18,7 @@ class Program
         
         do
         {
-            int chosenNumber = randomGenerator.Next(1, 100);
+            int chosenNumber = randomGenerator.Next(1, 101);
 
             int guessedNumber = 0;
 
