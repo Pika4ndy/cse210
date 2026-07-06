@@ -1,4 +1,4 @@
-# Week 1 Comments: Diving into C\#
+# Week 1: Diving into C\#
 
 Learning a new programming language makes me really excited. I have always wanted to learn a language by my own but never could achieve it completely.
 I think learning with courses and exercises will help me do it better. Since I have deeply learned Python, I hope to learn C# in the similar way while
