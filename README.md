@@ -8,7 +8,7 @@ This repository contains the code and documentation for the CSE 210 course by BY
 
 ## Project Overview (draft)
 
-| Week | Project | Description | Comments |
+| Week | Project | Description | Journal |
 | ----- | ----- | ----- | ----- |
 | 1 | C# Fundamentals | Fundamentals of every programming languages: variables, conditions, loop, functions | [Diving into C#](./week01/README.md) |
 | 2 | Project | Description | [Not here yet](./week02/README.md) |
