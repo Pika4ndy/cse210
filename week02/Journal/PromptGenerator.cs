@@ -12,11 +12,12 @@ public class PromptGenerator
         "What's new you learnt today?"
     };
 
+        Random _randomGenerator = new Random();
+
+
     public string GetRandomPrompt()
     {
-        Random randomGenerator = new Random();
-
-        int randomIndex = randomGenerator.Next(_prompts.Count);
+        int randomIndex = _randomGenerator.Next(_prompts.Count);
 
         return _prompts[randomIndex];
     }

@@ -1,0 +1,26 @@
+Abstraction is the process of simplifying complex systems by turning them into manageable blocks.
+It allows the system to be more understandable and easier to adapt and modify through changes while
+the main process can stay safe from these changes. Abstracting allows fragment of code to be used
+everywhere throughout the code. For instance, in programming, creating functions
+that encapsulate repeated code or creating classes that represent blocks of attribute and behavior
+is an example of abstraction. They allow the programmer to focus on the main process rather than the
+details of repeating code and changes all over the code.
+Here is a code example of abstraction:
+
+public class Entry
+{
+    public string _date;
+    public string _promptText;
+    public string _entryText;
+    public string _username; 
+
+    public void Display()
+    {
+        Console.WriteLine($"Date: {_date} by {_username} — Prompt: {_promptText}\n{_entryText.Replace("\\n", Environment.NewLine).Replace("%semicolon%", ";")}");
+    }
+}
+
+This example represent an use of abstraction because here we create a class, which we can think
+ as a blueprint, that contains attributes (date, prompt, text entry and the username) which 
+specify the character of the object and a behavior/action: Display, which display the Entry 
+according to the layout. Using classes like such eases creation and manipulation of many object that have the  same characteristics because we can create each object whiteout explicitly creating their attributes which makes things easier to understand and to look at.
