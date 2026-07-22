@@ -1,0 +1,38 @@
+Encapsulation is the principle of enclosing and hiding intern characteristics of the program while
+keeping everything manageable through methods, it follows the principle of 'hiding as most as possible'
+to the user. It eases management and debugging when an error occurs, plus it makes the developer
+create behavior and attribute that will work properly. It helps following the use of 'abstraction' as
+well because it makes the code re usable every where else. An example of 'encapsulation' can be found
+when a code initiate a class then access and manipulates it through its methods rather than its internal
+attributes.
+
+Here is a sample of code from the 'Word' class in the Scripture Memorizer project:
+
+public class Word {
+    private string _text;
+    private bool _isHidden;
+    private string _originalText;
+
+    public Word(string text) {
+        _text = text;
+        _originalText = text;
+        _isHidden = false;
+    }
+
+    public void Show() {
+        _text = _originalText;
+        _isHidden = false;
+    }
+
+    public bool IsHidden() {
+        return _isHidden;
+    }
+    
+    public string GetDisplayText() {
+        return _text;
+    }
+}
+
+Here, we can see that we can get the value inside _text through the GetDisplayText() methods
+and not by calling directly the attributes because it is set to private, which means that it is
+only accessible inside the class.
