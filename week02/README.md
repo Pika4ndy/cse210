@@ -1,4 +1,4 @@
-# Week 2: Intro to C# Classes (or class in general)
+# Week 2: Intro to C# Classes (Abstraction)
 
 ## What is Abstraction?
 
@@ -11,6 +11,14 @@ abstraction can be seen in the form of *classes* and *functions*. A class is a b
 
 Placeholder
 
+## C# Documentation
+
+<!-- Difficult to understand -->
+
+## Overwhelmed
+
+<!-- All my activities -->
+
 ## Questions I had
 
 <details>
@@ -19,6 +27,16 @@ C: No runtime abstraction player (Arduino, OS kernel, other language)
 C++: Maximum speed with structural scale (3A Video Games, HP engine, High-Frequency Trading)
 C#: Balanced performance, great tooling, safe memory (Enterprise Web&Backend, Windows Desktop App, Game Dev Mobile/Indie)
 Python: Easiest, vast ecosystem (LLM, automation scripting, rapid prototyping)
+| Languages | Execution Speed | Memory management | Type system | Development speed | Primary focus | Major uses |
+| ----- | ----- | ----- | ----- |
+| C | Extremely fast | Manual | Static (weak) | Very slow | Hardware control | Embedded systems & microcontrollers, OS kernel, new programming language/interpreter |
+| C++ | Extremely fast | Manual | Video games,  |
+| C# | Fast | ----- | ----- |
+| Python | Slow | ----- | ----- |
+| Javascript | ----- | ----- | ----- |
+
+> Credit to Gemini
+
 </details>
 
 <details>
@@ -32,13 +50,30 @@ it's [**mermaid**](https://mermaid.ai).
 
 </details>
 
-What does the `public` keyword do?
+<details><summary>What does the `public` keyword do?</summary>
+The `public` keyword is an access modifier that allows the affixed object (class, method, or variable) to be accessible throughout the entire program/project.
+I still didn't learn it here but it contrasts with another access modifier: `private, which makes the opposite. Making the object only accessible within the
+class it is defined. They are really important to understand and use because they help maintain the code and make it more secure by forcing us to use the
+methods to manipulate the proprieties of the class.
+</details>
 
-How to create my own project again?
+<details>
+    <summary>How to create my own project again?</summary>
+    Yeah :sweat_smile: I forgot how to initialize a new project in C# if I wanted to do my own. Alright, so how do we do this (listen carefully Andy):
+    1. **Open your folder**
+    2. **Execute `dotnet new console` in the terminal**
 
-When to put `use System;`?
+    From here, your main file should be created and can already be executed. To do so, you need to execute `dotnet run` in the terminal. However, if you want
+    to debug your code, open your palette and look for `.NET: Generate Assets for Build and Debug`. This will create a `.vscode`folder containing the debug configuration.
+</details>
 
-What is `#if`?
+<details>
+    <summary>When to put `use System;`?</summary>
+</details>
+
+<details>
+    <summary>What is `#if`?</summary>
+</details>
 
 ## Inspirations
 
@@ -48,4 +83,4 @@ What is `#if`?
 - default file name = today’s date
 - double <Enter> key to end paragraph
 - Use diagrams in my comments
-.
+- 
