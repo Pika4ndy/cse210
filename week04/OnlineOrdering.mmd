@@ -1,0 +1,67 @@
+---
+title: Online Ordering Design
+displayMode: compact
+config:
+  layout: elk
+  theme: 'redux'
+
+classDiagram:
+    useWidth:200
+---
+classDiagram
+        class Order {
+            _products: List~Product~
+            _customer: Customer
+            _shippingCost: double
+
+            Order(customer: Customer)
+
+            +AddProduct(product: Product) void
+            +GetTotalCost() double
+            +GetTrackingLabel() string
+            +GetShippingLabel() string
+        }
+
+        class Product {
+            _name: string
+            _productID: int
+            _price: double
+            _quantity: int
+
+            Product(name: string, ID: int, price: double, quantity: int)
+
+            +GetCost() double
+            +GetName() string
+            +GetID() int
+        }
+
+        class Customer {
+            _name: string
+            _address: Address
+
+            Customer(name: string, address: Address)
+            Customer(name: string, street: string, city: string, stateOrProvince: string, country: string)
+            Customer(name: string, street: string, city: string, country: string)
+
+            +IsInUSA() bool
+            +GetAddress() string
+            +GetName() string
+        }
+
+        class Address {
+            _streetAddress: string
+            _city: string
+            _stateOrProvince: string
+            _country: string
+
+            Address(street: string, city: string, stateOrProvince: string, country: string)
+            Address(street: string, city: string, country: string)
+
+            +IsInUSA() bool
+            +GetFullAdress() string
+        }
+
+        Address~~Customer
+        Product~~Order
+        Address~~Order
+        Customer~~Product

@@ -4,7 +4,7 @@ public class Order
 {
     // Shipping cost USA: $5 else: $35
     private const double CostInUsa = 5;
-    private const double CostOutUsa = 5;
+    private const double CostOutUsa = 35;
     private List<Product> _products = new List<Product>();
     private Customer _customer;
     private double _shippingCost;
@@ -38,7 +38,7 @@ public class Order
             sum += product.GetCost();
         }
 
-        return sum + _shippingCost;
+        return Math.Round(sum + _shippingCost, 2);
     }
 
     
@@ -56,7 +56,7 @@ public class Order
             string productName = product.GetName();
             int productID = product.GetID();
 
-            packingLabel += $"{i}. {productName} — {productID}";
+            packingLabel += $"{i}. {productName} — {productID}\n";
         }
 
         return packingLabel;
@@ -66,7 +66,7 @@ public class Order
         // (name + address) of customer
     public string GetShippingLabel()
     {
-        return $"{_customer.GetName()} ; {_customer.GetAddress}";
+        return $"{_customer.GetName()}\n{_customer.GetAddress()}";
     }
 
 }

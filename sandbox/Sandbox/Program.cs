@@ -11,11 +11,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        List<int> numbers = new List<int>{0, 5, 10, 2, 8};
-
-        if (numbers.Contains(4))
+        List<string> USNames = new List<string>{"USA", "US", "United States of America", "United States"};
+        if (USNames.Contains("USA"))
         {
-            Console.WriteLine("Yes");
+            Console.WriteLine("True");
+        } else
+        {
+            Console.WriteLine("False");
         }
     }
 

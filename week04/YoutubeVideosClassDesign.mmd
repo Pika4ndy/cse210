@@ -1,0 +1,33 @@
+---
+title: Youtube Videos Design
+---
+
+classDiagram
+    class Video {
+        _title: string
+        _author: string
+        _length: double
+        _comments: List~Comment~
+
+        Video()
+        Video(title: string, author: string, length: double)
+        Video(title: string, length: double)
+        Video(length: double)
+
+        +GetNumberOfComments() int
+        +AddComment(comment) void
+        +GetDisplayComments() string
+        +GetVideoInfo() string
+        -GetFormattedLength() double[]
+    }
+
+    class Comment {
+        _name: string
+        _text: string
+        Comment(name: string, text: string)
+        Comment(text: string)
+
+        +EditComment(text: string) void
+        +getName() string
+        +getComment() string
+    }

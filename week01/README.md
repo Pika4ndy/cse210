@@ -21,6 +21,14 @@ if (condition)
 }
 ```
 
+Rather than
+
+```js
+if (condition) {
+    // statements here
+}
+```
+
 that is really new to me so I hope to get used to it soon. I am thinking about practicing it often.
 
 ## C# is a strongly typed language
@@ -62,7 +70,7 @@ Though I may have already heard about it, I just know that **Unity** uses C# as 
 
 I find the `do-while` loop pretty funny, aren't you? My first impression was: "What is a *do-while* again? Is it not the same as a *while* loop?" Well quite the same apparently.
 
-Maybe I find it funny because of a meme I once saw about it. 
+Maybe I find it funny because of a meme I once saw about it.
 
 ## 🤔 My questions
 

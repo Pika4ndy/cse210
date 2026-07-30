@@ -13,6 +13,14 @@ public class Address
         _country = country;
     }
 
+    public Address(string street, string city, string country) // without state/province
+    {
+        _streetAddress = street;
+        _city = city;
+        _stateOrProvince = "";
+        _country = country;
+    }
+
     // Method: isInUSA?
     public bool IsInUSA()
     {
@@ -29,6 +37,12 @@ public class Address
     //Method: ?display full address, new line were appropriated
     public string GetFullAddress()
     {
-        return $"{_streetAddress}, {_city}\n{_stateOrProvince}, {_country}";
+        if (_stateOrProvince.Trim() != "")
+        {
+            return $"{_streetAddress}, {_city}\n{_stateOrProvince}, {_country}";
+        } else
+        {
+            return $"{_streetAddress}, {_city}\n{_country}";
+        }
     }
 }

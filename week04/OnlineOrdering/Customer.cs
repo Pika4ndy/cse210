@@ -1,4 +1,4 @@
-public class Customer
+    public class Customer
 {
     private string _name;
     private Address _address;
@@ -13,6 +13,12 @@ public class Customer
     {
         _name = name;
         _address = new Address(street, city, stateOrProvince, country);
+    }
+
+    public Customer(string name, string street, string city, string country)
+    {
+        _name = name;
+        _address = new Address(street, city, country);
     }
 
     // Method: isInUSA?
