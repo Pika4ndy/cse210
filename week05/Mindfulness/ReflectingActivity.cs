@@ -41,7 +41,7 @@ public class ReflectingActivity : Activity
         string currentQuestion = "";
         List<string> presentQuestions = new List<string>();
 
-        while (DateTime.Now < endTime && presentQuestions.Count <= _questions.Count)
+        while (DateTime.Now < endTime && presentQuestions.Count < _questions.Count)
         {
             do 
             {
