@@ -20,12 +20,12 @@ public class Comment
         _text = text;
     }
 
-    public string getName()
+    public string GetName()
     {
         return _name;
     }
 
-    public string getComment()
+    public string GetComment()
     {
         return _text;
     }

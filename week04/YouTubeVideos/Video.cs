@@ -85,7 +85,7 @@ public class Video
         foreach (Comment comment in _comments)
         {
             i++;
-            display += $"{i}. {comment.getName()}: '{comment.getComment()}'\n";
+            display += $"{i}. {comment.GetName()}: '{comment.GetComment()}'\n";
         }
 
         return display;

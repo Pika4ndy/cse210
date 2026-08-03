@@ -21,4 +21,21 @@ class Program
         }
     }
 
+
+    public void Foo()
+    {
+        if (true)
+        {
+            List<string> USNames = new List<string> { "USA", "US", "United States of America", "United States" };
+            if (USNames.Contains("USA"))
+            {
+                Console.WriteLine("True");
+            }
+            else
+            {
+                Console.WriteLine("False");
+            }
+        }
+    }
+
 }

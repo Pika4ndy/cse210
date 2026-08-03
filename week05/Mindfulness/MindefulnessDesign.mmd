@@ -1,0 +1,48 @@
+classDiagram
+    Activity <|-- BreathingActivity
+    Activity <|-- ReflectingActivity
+    Activity <|-- ListingActivity
+
+    class Activity {
+        Activity(string name, string description, int duration)
+
+        +DisplayStartingMessage() void
+        +DisplayEndingMessage() void
+        +ShowSpinner(int seconds) void
+        +ShowCountdown(int seconds) void
+
+        _name: string
+        _description: string
+        _duration: int
+    }
+
+    class BreathingActivity {
+        BreathingActivity()
+        +Run() void
+    }
+
+    class ReflectingActivity {
+        ReflectingActivity(List<string> prompts, List<string> questions)
+
+        %% -DisplayQuestions(int seconds) void
+        -DisplayQuestions() void
+        -GetRandomPrompt() string
+        -GetRandomQuestion() string
+        +Run() void
+
+        _prompts: List<string>
+        _questions: List<string>
+    }
+
+    class ListingActivity {
+        ListingActivity(List<string> prompts)
+
+        -GetRandomPrompt() string
+        +GetListFromUser() List<string>
+        +Run() void
+
+        _count: int
+        _questions: List<string>
+    }
+
+    note "Purpose of the Program: Get the user take time for mindfulness activities\nUser input: Menu, activity time duration\nOutput: Menu, Starting message, prompt, questions, ending message\nEnd of the Program: User inputs 4 in menu"
